@@ -1,0 +1,26 @@
+home page:
+    user log in, about, create new account
+
+new account:
+    email, password,
+    employer vs applicant
+    what looking for vs who are you
+    more survey questions....
+
+account page:
+    LinkedIn-ish...
+    view possible aplicants/job openings
+    more surveys...
+
+Management:
+    sort job openings, certificate programs...
+    -or-
+    sort applicants by...
+
+
+
+
+------DB--------
+
+tables:
+    users
