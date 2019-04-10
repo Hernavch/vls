@@ -1,15 +1,15 @@
 {
   "development": {
-    "username": "vls",
-    "password": "1234",
-    "database": "vls_db",
+    "username": "root",
+    "password": "kids4luv",
+    "database": "project2",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "vls",
     "password": "1234",
-    "database": "vls_db",
+    "database": "r22ak1u1s4otxw35",
     "host": "localhost",
     "dialect": "mysql",
     "logging": false
