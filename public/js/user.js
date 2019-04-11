@@ -1,3 +1,5 @@
+// On click events for buttons
+//
 $("#edit-certs").on("click", function(event) {
   event.preventDefault();
   //   edit the certifications in data.

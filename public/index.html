@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
@@ -25,14 +26,15 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">VLS</a>
+    <a class="navbar-brand" href="#"><p id="icon" style="text-shadow: rgb(48, 117, 165) 0px 0px 0px, rgb(53, 129, 182) 1px 1px 0px, rgb(58, 142, 200) 2px 2px 0px, rgb(63, 154, 217) 3px 3px 0px; font-size: 20px; color: rgb(255, 255, 255); height: 34px; width: 34px; line-height: 34px; border-radius: 10%; text-align: center; background-color: rgb(68, 167, 235);">vLs</p>  </a>
+
     
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <form name="login" >
         <div class="login-container">
             <input type="text" placeholder="Username" name="username">
             <input type="text" placeholder="Password" name="psw">
-            <button id="existing-user-login-button" type="existing-user-submit">Login</button>
+            <button id="existing-user-login-button" class="btn edit" type="existing-user-submit">Login</button>
         </div>
       </form>  
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
@@ -198,18 +200,17 @@
         <div class="col-sm-4">
             <div class="card">
                 <div class="card-body">
-          <button id="new-seekers-button" href="#" class="button-link">
-            NEW JOB SEEKERS <br>(click here)
-          </button>
+          <button id="new-seekers-button" href="#" class="button-link btn btn-sm btn-block edit">
+            <h5>SIGN UP TODAY!</h5>
+            <h6>VLS USER</h6>
+        </button>
           <br><br>
           
-          <button id="new-employers-button" href="#" class="button-link">
-            NEW EMPLOYERS <br>(click here)
+          <button id="new-employers-button" href="#" class="button-link btn btn-sm btn-block edit">
+             <h5>SIGN UP TODAY!</h5>
+             <h6>EMPLOYER USER</h6>
           </button>
-          <br><br>
-          <button id="new-recruiters-button" href="#" class="button-link">
-            NEW RECRUITERS <br>(click here)
-          </button>
+          
           <br><br>
         </div>
       </div>

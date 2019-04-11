@@ -1,6 +1,9 @@
 body{
-  background-image: url("../assets/images/random_grey_variations.png")
+  background-image: url("../assets/images/random_grey_variations.png");
+  background-repeat:stretch;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .list-group-item {
   line-height: 2.5;
 }
