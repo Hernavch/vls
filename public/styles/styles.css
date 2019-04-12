@@ -1,26 +1,29 @@
-body{
-  background-image: url("../assets/images/random_grey_variations.png")
+body {
+  background-image: url("../assets/images/random_grey_variations.png");
 }
 .list-group-item {
   line-height: 2.5;
 }
 
-.update{
+.update {
   float: right;
 }
 
-.edit{
+.edit {
   background-color: rgb(68, 167, 235);
   color: #ffffff;
 }
-.message{
+.message {
+
   background-color: rgb(68, 167, 235);
   color: #ffffff;
   font-size: 15px;
 
-  float:right;
-  margin-left: -50px;}
- 
-.side3{
+  float: right;
+  margin-left: -50px;
+}
+
+.side3 {
   font-size: 15px;
 }
+

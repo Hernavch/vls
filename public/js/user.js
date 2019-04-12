@@ -49,7 +49,7 @@ $("#edit-intrests").on("click", function(event) {
     }
   }
 
-  var topic = $("#topic-input").val();
+  //var topic = $("#topic-input").val();
 
   $("#add-btn").on("click", function(event) {
     event.preventDefault();
