@@ -14,6 +14,7 @@ body {
   color: #ffffff;
 }
 .message {
+
   background-color: rgb(68, 167, 235);
   color: #ffffff;
   font-size: 15px;
@@ -25,3 +26,4 @@ body {
 .side3 {
   font-size: 15px;
 }
+
