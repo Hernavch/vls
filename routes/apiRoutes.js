@@ -2,8 +2,8 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get candidate data for profile page
-  app.get("/api/can/:id", function(req, res) {
-    db.Candidate.findOne({ where: { id: req.params.id } }).then(function(
+  app.get("/api/can/:email", function(req, res) {
+    db.Candidate.findOne({ where: { email: req.params.email } }).then(function(
       results
     ) {
       res.json(results);
@@ -32,6 +32,13 @@ module.exports = function(app) {
   app.post("/api/employer", function(req, res) {
     db.Candidate.create(req.body).then(function(dbEmp) {
       res.json(dbEmp);
+    });
+  });
+
+  // Create a new opening
+  app.post("/api/open", function(req, res) {
+    db.Opening.create(req.body).then(function(dbOp) {
+      res.json(dbOp);
     });
   });
 
