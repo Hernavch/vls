@@ -11,6 +11,7 @@ module.exports = function(sequelize, DataTypes) {
     location: DataTypes.INTEGER,
     CPR: DataTypes.BOOLEAN,
     HCA: DataTypes.BOOLEAN,
+    BLS: DataTypes.BOOLEAN,
     CNA: DataTypes.BOOLEAN,
     HHA: DataTypes.BOOLEAN,
     DSP1: DataTypes.BOOLEAN,
@@ -21,13 +22,3 @@ module.exports = function(sequelize, DataTypes) {
   });
   return Candidate;
 };
-
-// CPR/BLS
-// Home Care Aid (HCA California)
-// Certified Nurse Assistant (CNA)
-// Home Health Aid (HHA)
-// DSP 1
-// DSP 2
-// CPI 1
-// CPI 2
-// Registered Nurse (RN)

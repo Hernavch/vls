@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "root",
-    "password": "kids4luv",
-    "database": "project2",
+    "username": "vls",
+    "password": "1234",
+    "database": "vls_db",
     "host": "localhost",
     "dialect": "mysql"
   },
