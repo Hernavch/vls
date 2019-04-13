@@ -379,7 +379,7 @@ $(document).ready(function() {
 
   // AJAX CALL FOR EXISTING USER LOGIN
   $('form[name="login"]').on("submit", function(event) {
-    event.preventDefault();
+    //event.preventDefault();
     console.log("Hello World1!");
     var loginData = {
       username: $("login-name").val(),
@@ -398,8 +398,8 @@ $(document).ready(function() {
   });
   // AJAX CALL FOR NEW CANDIDATE SUBMIT FORM
   $("#new-candidate-form").on("submit", function(event) {
-    event.preventDefault();
-    alert("Clicked!");
+    //event.preventDefault();
+    //alert("Clicked!");
     console.log("Hello World2!");
     var paramObj = {};
 
@@ -418,8 +418,8 @@ $(document).ready(function() {
   });
   // AJAX CALL FOR NEW EMPLOYER SUBMIT FORM
   $(document).on("submit", "#new-employer-form", function(event) {
-    event.preventDefault();
-    alert("HEY THERE");
+    //event.preventDefault();
+    //alert("HEY THERE");
     console.log("Hello World3!");
     var paramObj = {};
     $(this)
