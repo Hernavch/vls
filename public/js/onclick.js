@@ -249,15 +249,11 @@ $(document).ready(function() {
       username: $("login-name").val(),
       password: $("login-password").val()
     };
-    //console.log("$", $);
-    // $.ajax({
-    //   type: "POST",
-    //   url: "/login",
-    //   data: loginData
-    // }).then(function(res) {
-    //   if (res === res.success) {
-    //     window.location.href = "./manager.html";
-    //   }
+    // $.get("/api/", function(data) {
+    //   console.log(data);
+    //   $("#company")
+    //     .empty()
+    //     .append(data.company);
     // });
   });
   // AJAX CALL FOR NEW CANDIDATE SUBMIT FORM -----> WORKING

@@ -22,6 +22,16 @@ module.exports = function(app) {
     );
   });
 
+  //get whether emp or can
+  // app.get("/api/emps/", function(req, res) {
+  //   db.Employer.findOne({ where: { username: req.params.username } }).then(
+  //     function(results) {
+  //       res.json(results);
+  //       console.log(results);
+  //     }
+  //   );
+  // });
+
   // Create a new candidate
   app.post("/api/candidate", function(req, res) {
     db.Candidate.create(req.body).then(function(dbCan) {

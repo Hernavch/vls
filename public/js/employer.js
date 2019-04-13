@@ -50,4 +50,15 @@ $.get(apiString, function(data) {
   $("#company")
     .empty()
     .append(data.company);
+  $("#expReq")
+    .empty()
+    .append(data.exp_req);
+
+  $("#certReq")
+    .empty()
+    .append(data.cert_req);
+
+  $("#openingA")
+    .empty()
+    .append(data.postion);
 });
