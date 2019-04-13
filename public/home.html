@@ -39,12 +39,12 @@
 <!-- Here are the rows and user profile info -->
     <div class="container">
        <div class="row">
-          <div class="col">
-                <div class="card" style="width: 18rem;">
+          <div class="col-4">
+                <div class="card ml-4" style="width: 19rem;">
                     <!-- User Image -->
                         <img src="./assets/images/download.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title" id="nameUser">Me!</h5>
+                          <h5 class="card-title" id="firstName">Me!</h5>
                           <p class="card-text" id="bio">Here I am and I want to find a job.</p>
                         </div>
                         <!-- Users Certifications -->
@@ -67,14 +67,15 @@
                
           </div>
         <!-- Middle Section with status and career goal -->
-          <div class="col-5">
+          <div class="col-4">
+            <!-- CURRENT STATUS CARD -->
                 <div class="row" id="status">
                    <div class="card col-11 " style="width: 18rem;">
                         <div class="card-body">
                             <button class="update btn btn-light edit" id="edit-status">+</button>
                           <h5 class="card-title">Current Status </h5>
                           <h6 class="card-subtitle mb-2 text-muted">Student</h6>
-                          <p class="card-text">Part time</p>
+                          <p class="card-text" id="status"> Part time</p>
                          
                           <a href="#" class="card-link">Resume</a>
                         </div>
@@ -83,13 +84,14 @@
 
                 </div>
                      <br>
+                <!-- Target GOAL CARD NEW IDS -->
                 <div class="row">
                     <div class="card col-11" style="width: 18rem;">
                             <div class="card-body targetGoal">
                                 <button class="update btn btn-light edit" id="edit-target">+</button>
                                   <h5 class="card-title">Target Position</h5>
-                                  <h6 class="card-subtitle mb-2 text-muted">Full time Job</h6>
-                                    <p class="card-text">Registered Nurse</p>
+                                  <h6 class="card-subtitle mb-2 text-muted" id="targetStatus">Full time Job</h6>
+                                    <p class="card-text" id="target">Registered Nurse</p>
                                     <iframe src="https://www.careeronestop.org/videos/careeronestop-videos-content.aspx?videocode=29114100&op=y" max-width="350" height="200"></iframe>
                                     <!-- <iframe src="https://www.careeronestop.org/Videos/careeronestop-videos.aspx?videocode=29114100&op=y" max-width="350" height="200"></iframe> -->
 
@@ -114,13 +116,13 @@
           </div>
 
           <!-- 3rd Row Extra jobs and training -->
-          <div class="col">
+          <div class="col-4">
                 <div class="row">
                         <div class="card col-10" style="width: 18rem;">
-                                <div class="card-body">
-                                      <h5 class="card-title">Find Jobs</h5>
-                                      <h6 class="card-subtitle mb-2 text-muted">Full time Job</h6>
-                                        <p class="card-text">Indeed Job Postings</p>
+                                <div class="card-body" id="jobSearch">
+                                      <h5 class="card-title font-weight-bold" id="jobs">Find Jobs</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted jobSeek">Full time Job</h6>
+                                        <p class="card-text" id="jobPost">Indeed Job Postings</p>
                                       <a href="#" class="card-link">Card link</a>
                                       <a href="#" class="card-link">Another link</a>
                                 </div>
@@ -129,24 +131,27 @@
                 <br>
                 <div class="row">
                         <div class="card col-10" style="width: 18rem;">
-                                <div class="card-body">
-                                      <h5 class="card-title">Find Training</h5>
-                                      <h6 class="card-subtitle mb-2 text-muted">Certifications</h6>
-                                        <p class="card-text">Schools in your area</p>
-                                      <a href="#" class="card-link">Card link</a>
-                                      <a href="#" class="card-link">Another link</a>
+                                <div class="card-body" id="training">
+                                      <button type="button" class="btn btn-sm btn-block edit">Find Training</button>
+                                </br>
+                                      <h6 class="card-subtitle mb-2 " id="trainProgram">Certifications</h6>
+                                      <h6 class="card-subtitle mb-2 " id="trainSchool">Certifications</h6>
+                                      <a class="card-text" id="schoolLink"></a>
+                                        <h7 class="card-text text-muted" id="trainDuration">Schools in your area</h7>
+                                       
                                 </div>
                         </div>
                      </div>
                 <br>
                 <div class="row">
                         <div class="card col-10" style="width: 18rem;">
-                                <div class="card-body">
-                                      <h5 class="card-title">Find Internships</h5>
-                                      <h6 class="card-subtitle mb-2 text-muted">Unpaid or Paid</h6>
-                                        <p class="card-text">Internship Postings</p>
-                                      <a href="#" class="card-link">Card link</a>
-                                      <a href="#" class="card-link">Another link</a>
+                                <div class="card-body" id="internship">
+                                      <h5 class="card-title font-weight-bold">Find Internships</h5>
+                                      <!-- <h6 class="card-subtitle mb-2 text-muted">Unpaid or Paid</h6> -->
+                                        <p class="card-text" id="internName">Internship Postings</p>
+                                        <p class="card-text" id="intenProgram">Internship Postings</p>
+                                      
+                                      <a href="#" class="card-link" id="trainLink">Another link</a>
                                 </div>
                         </div>
                      </div>

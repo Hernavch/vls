@@ -8,12 +8,12 @@ module.exports = function(app) {
   });
 
   // Load candidate profile page
-  app.get("/can/:id", function(req, res) {
+  app.get("/can", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 
   // Load employer profile page with their info and employer info
-  app.get("/emp/:id", function(req, res) {
+  app.get("/emp", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/manager.html"));
   });
 
