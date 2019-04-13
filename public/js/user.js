@@ -1,3 +1,43 @@
+var oneCode = "29-1141.00";
+var zip = "95628";
+console.log("outside");
+
+$.get("/api/get-res?onecode=" + oneCode + "&zip=" + zip, function(response) {
+  console.log("inside");
+  var res = JSON.parse(response);
+  var schoolPrograms = res.SchoolPrograms;
+  var school = schoolPrograms[0].SchoolName;
+  var schoolUrl = schoolPrograms[0].SchoolUrl;
+  var program = schoolPrograms[0].ProgramName;
+  var duration = schoolPrograms[0].StudentGraduated;
+  console.log(schoolUrl);
+
+  var trainingInfo = $("<p>");
+  trainingInfo.attr("id", "info-school");
+  trainingInfo.attr("class", "card-body");
+  $("#trainProgram")
+    .empty()
+    .append(program);
+
+  $("#trainSchool")
+    .empty()
+    .append(school);
+
+  $("#trainDuration")
+    .empty()
+    .append("Duration: ", duration);
+
+  var trainLink = $("<a>");
+  trainLink.attr("href", schoolUrl);
+  trainLink.attr("alt", schoolUrl);
+  trainLink.attr("target", "_blank");
+
+  $("#schoolLink")
+    .append(trainLink, schoolUrl)
+    .append("</br>");
+  //do stuff
+});
+
 $("#edit-certs").on("click", function(event) {
   event.preventDefault();
   //   edit the certifications in data.
@@ -79,15 +119,25 @@ $.get(apiString, function(data) {
   $("#firstName")
     .empty()
     .append(data.first_name, " ", data.last_name);
-  // $("#certOne")
-  //     .empty()
-  //     .append(CERT 0);
+  $("#status")
+    .empty()
+    .append(data.status);
+
+  $("#targetStatus")
+    .empty()
+    .append(data.job_type);
+
+  $("#target")
+    .empty()
+    .append(data.target);
+
+  $("#certOne").empty();
+  // 	.append(CERT 0);
 
   // $("#certTwo")
-  //     .empty()
-  //     .append(CERT 1);
+  // 	.empty()
+  // 	.append(CERT 1);
 
   // $("#certThree")
-  //     .empty()
-  //     .append(CERT 2);
+  // 	.empty();
 });
