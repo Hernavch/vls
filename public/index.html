@@ -59,7 +59,7 @@
               id="login-name"
               type="text"
               placeholder="Username"
-              name="email"
+              name="username"
             />
             <input
               id="login-password"
@@ -146,6 +146,20 @@
                   />
                 </div>
                 <div class="input-group card-body">
+                  <label for="username">
+                    User name
+                    <sup class="required" title="Required">*</sup>
+                  </label>
+                  <input
+                    type="text"
+                    name="username"
+                    id="last_name"
+                    class="required"
+                    autocapitalize="off"
+                    placeholder="User name"
+                  />
+                </div>
+                <div class="input-group card-body">
                   <label for="email">
                     Email address
                     <sup class="required" title="Required">*</sup>
@@ -215,16 +229,16 @@
                     </p>
                     <select name="job_type" class="chosen-select" id="q3">
                       <option value=""></option>
-                      <option value="1">full-time</option>
-                      <option value="2">part-time</option>
-                      <option value="3">internship</option>
+                      <option value="full-time">full-time</option>
+                      <option value="part-time">part-time</option>
+                      <option value="internship">internship</option>
                     </select>
                     <br /><br />
                     <p>4. What is your current employment status?</p>
                     <select name="status" class="chosen-select" id="q4">
                       <option value=""></option>
-                      <option value="1">Unemployed</option>
-                      <option value="2">Employed</option>
+                      <option value="Unemployed">Unemployed</option>
+                      <option value="Employed">Employed</option>
                     </select>
                     <br /><br />
                     <p>
@@ -353,6 +367,9 @@
             </div>
           </div>
         </div>
+
+        <!--  -->
+
         <!-- END INITIAL SIGN UP FORM -->
         <!-- END LEFTHAND COLUMN -->
         <!-- BEGIN RIGHTHAND COLUMN -->
@@ -369,7 +386,7 @@
               <br /><br />
 
               <button
-                id="new-employers-button"
+                id="new-employer-form"
                 href="#"
                 class="button-link button-link btn btn-sm btn-block edit"
               >
@@ -390,5 +407,6 @@
       </div>
     </div>
     <script src="./js/onclick.js"></script>
+    <script src="./js/empSub.js"></script>
   </body>
 </html>

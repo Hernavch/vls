@@ -62,3 +62,32 @@ $("#edit-intrests").on("click", function(event) {
   makeABtn();
   console.log(topics);
 });
+
+$.urlParam = function(name) {
+  var results = new RegExp("[?&]" + name + "=([^&#]*)").exec(
+    window.location.href
+  );
+  return results[1] || 0;
+};
+
+var user = $.urlParam("username");
+console.log(user);
+var apiString = "/api/can/" + user;
+
+$.get(apiString, function(data) {
+  console.log(data);
+  $("#firstName")
+    .empty()
+    .append(data.first_name, " ", data.last_name);
+  // $("#certOne")
+  //     .empty()
+  //     .append(CERT 0);
+
+  // $("#certTwo")
+  //     .empty()
+  //     .append(CERT 1);
+
+  // $("#certThree")
+  //     .empty()
+  //     .append(CERT 2);
+});
