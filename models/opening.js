@@ -8,14 +8,14 @@ module.exports = function(sequelize, DataTypes) {
     location: DataTypes.INTEGER
   });
 
-  Opening.associate = function(models) {
-    // We're saying that a Opening should belong to an Author
-    // A Opening can't be created without an Author due to the foreign key constraINTEGER
-    Opening.belongsTo(models.Employer, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
+  // Opening.associate = function(models) {
+  //   // We're saying that a Opening should belong to an Author
+  //   // A Opening can't be created without an Author due to the foreign key constraINTEGER
+  //   Opening.belongsTo(models.Employer, {
+  //     foreignKey: {
+  //       allowNull: false
+  //     }
+  //   });
+  // };
   return Opening;
 };
