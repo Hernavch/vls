@@ -2,7 +2,6 @@ var db = require("../models");
 var request = require("request");
 require("dotenv").config();
 
-
 module.exports = function(app) {
   // Get candidate data for profile page
   app.get("/api/can/:email", function(req, res) {
