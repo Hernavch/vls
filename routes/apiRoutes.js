@@ -1,4 +1,7 @@
 var db = require("../models");
+var request = require("request");
+require("dotenv").config();
+
 
 module.exports = function(app) {
   // Get candidate data for profile page
@@ -8,6 +11,33 @@ module.exports = function(app) {
     ) {
       res.json(results);
       console.log(results);
+    });
+  });
+  // Get EXTERNAL API
+  app.get("/api/get-res", function(req, res) {
+    var oneCode = req.query.onecode;
+    var zip = req.query.zip;
+    // https://api.careeronestop.org/v1/training/pilaTM9XEsBxYkv/29-1141.00/95628/25/0/0/0/0/0/0/0/0/10
+
+    var options = {
+      url: encodeURI(
+        "https://api.careeronestop.org/v1/training/pilaTM9XEsBxYkv/" +
+          oneCode +
+          "/" +
+          zip +
+          "/25/0/0/0/0/0/0/0/0/10"
+      ),
+      headers: {
+        "User-Agent": "request",
+        Authorization: process.env.APIKEY,
+        Accepts: "application/json"
+      }
+    };
+    console.log(options.url);
+    console.log(process.env.APIKEY);
+    request(options, function(error, result, body) {
+      // console.log(error, result, body);
+      res.json(body);
     });
   });
 
